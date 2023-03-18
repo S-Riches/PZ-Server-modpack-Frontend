@@ -1,0 +1,10 @@
+.Card {
+	background: #333533;
+	box-shadow: 5px 6px 0px #242423;
+	/* need to do a grid system here to be able to position the items in the card correctly*/
+}
+
+.Card h1{
+	color: #57B0E8;
+
+}
