@@ -1,10 +1,54 @@
-.Card {
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+  font-family: 'Manrope', sans-serif;
+}
+body{
+  background-color: #404240;
+}
+.cardGrid {
 	background: #333533;
+	display: flex;
+  flex-wrap: wrap;
+  max-width: 45vw;
+  margin: 2vw;
 	box-shadow: 5px 6px 0px #242423;
-	/* need to do a grid system here to be able to position the items in the card correctly*/
 }
 
-.Card h1{
-	color: #57B0E8;
+.cardGrid h1{
+  color: #57B0E8;
+}
+.cardGrid .image img {
+  padding: 2vw;
+  border-radius: 3vw;
+}
+.cardGrid .content {
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  padding: 1vw;
+}
+.cardGrid .content button {
+  background-color: #4694C0;
+  font-size: 1.2rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.Input {
+  background: #333533;
+  box-shadow: 5px 6px 0px #242423;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
+.Input input {
+  background: #57B0E8;
+  box-shadow: 2px 2px 0px #242423;
+  border-radius: 5px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 1rem;
+  border: none;
 }
