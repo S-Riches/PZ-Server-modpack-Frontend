@@ -12,10 +12,12 @@ test.describe("Send the link to the API", async () => {
         const sendModCollectionToApiButton = await page.getByTestId(
             "modCollectionSendButton"
         );
-        const firstCard = await page.getByTestId("modOptionCard");
+
         await modCollectionInputBox.fill(
             "https://steamcommunity.com/sharedfiles/filedetails/?id=2937473702"
         );
         await sendModCollectionToApiButton.click();
+        const firstCard = await page.getByTestId("modOptionCard").first();
+        await expect(firstCard).toBeVisible();
     });
 });
