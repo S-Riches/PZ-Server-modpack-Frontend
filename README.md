@@ -4,4 +4,5 @@ A frontend for my Project zomboid modpack tool
 
 -   react for development
 -   figma for designing the ui elements
--   playwright for tdd
+-   selenium for tdd
+-   yarn for package management

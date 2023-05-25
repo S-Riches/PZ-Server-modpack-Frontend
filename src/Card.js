@@ -4,7 +4,7 @@ const Card = (props) => {
     // if there are more than two mod ids, then we create a card.
     if (cardData[0].length > 1) {
         return (
-            <div className="Card" data-testid="modOptionCard">
+            <div className="Card" name="modOptionCard">
                 <div className="cardGrid">
                     <div className="image">
                         <img src={cardData[3]} />

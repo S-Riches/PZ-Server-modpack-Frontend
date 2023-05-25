@@ -12,12 +12,12 @@ const Input = (props) => {
         <div className="Input">
             <h2>Enter Mod Collection link here</h2>
             <input
-                data-testid="modCollectionInputBox"
+                name="modCollectionInputBox"
                 type="text"
                 value={linkToCollection}
                 onChange={handleChange}
             />
-            <button data-testid="modCollectionSendButton" onClick={handleClick}>
+            <button name="modCollectionSendButton" onClick={handleClick}>
                 Send
             </button>
         </div>
