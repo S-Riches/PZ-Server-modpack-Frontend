@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-const Input = (props) => {
+const Input = ({ callBackFunction }) => {
     const [linkToCollection, setLinkToCollection] = useState("");
     const handleChange = (event) => {
         setLinkToCollection(event.target.value);
     };
     const handleClick = () => {
-        props.callBackFunction(linkToCollection);
+        callBackFunction(linkToCollection);
     };
     return (
         <div className="Input">
