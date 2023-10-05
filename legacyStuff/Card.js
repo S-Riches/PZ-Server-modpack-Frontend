@@ -12,12 +12,9 @@ const Card = ({ cardData, addDataToObject }) => {
 
     // create an object, append choice of the checkbox to the object, send a set to the parent component to then collude into the choices.
     const handleModIdChoice = (e) => {
-        // TODO if true add, if false, remove from the array
-        modIdChoice.push(e.target.value);
-        console.log(modIdChoice);
-        let uniqueChoices = [...new Set(modIdChoice)];
-        console.log("set : ", uniqueChoices);
-        addDataToObject(uniqueChoices);
+        // we set a boolean to false initally
+        // we then set it to true by inverting it
+        // we then return the value of true or false, aswell as the mod id, if its false, remove from main array, otherwise add it
     };
     // if there are more than two mod ids, then we create a card.
     if (cardData[0].length > 1) {
@@ -47,6 +44,7 @@ const Card = ({ cardData, addDataToObject }) => {
                                         onClick={handleModIdChoice}
                                     />
                                 ))}
+                            {cardState && <button>send choice</button>}
                         </FormGroup>
                     </div>
                 </div>

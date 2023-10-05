@@ -7,7 +7,7 @@ const ProcessChoices = ({ modChoices }) => {
     return (
         <>
             <Button variant="contained" onClick={convertChoicesToSetToProcess}>
-                Process Choices
+                Process Choiceswa
             </Button>
         </>
     );
