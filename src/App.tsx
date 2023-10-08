@@ -1,24 +1,25 @@
 // main file
-import React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  BrowserRouter,
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    BrowserRouter,
 } from "react-router-dom";
 import MainPageLayout from "./layouts/MainPageLayout";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<MainPageLayout />} />
-    </Routes>
-  );
+    return (
+        <Routes>
+            <Route path="/" element={<MainPageLayout />} />
+        </Routes>
+    );
 }
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("root") as HTMLElement,
+
+const container = document.getElementById("root") as HTMLElement;
+const root = createRoot(container);
+root.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
 );
